@@ -37,9 +37,7 @@ export default function ({ types: t }) {
       if (!nextArg.isFunctionExpression()) {
         return false;
       }
-    } else {
-      if (!args.shift().isFunctionExpression()) return false;  
-    }
+    } else if (!nextArg.isFunctionExpression()) return false;
 
     return true;
   }
