@@ -31,7 +31,6 @@ export default function ({ types: t }) {
 
     let args = expr.get("arguments");
     if (args.length === 3 && !args.shift().isStringLiteral()) return false;
-    if (args.length !== 2) return false;
 
     let nextArg = args.shift();
     if (!nextArg.isArrayExpression()) {
