@@ -1,0 +1,6 @@
+language: node_js
+node_js:
+  - "0.12.0"
+script: "npm run-script test-ci"
+# Send coverage data to Coveralls
+after_script: "cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js"

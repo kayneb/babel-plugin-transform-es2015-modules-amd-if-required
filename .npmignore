@@ -1,4 +1,5 @@
-src
-node_modules
-test
-scripts
+src/
+node_modules/
+test/
+scripts/
+coverage/
