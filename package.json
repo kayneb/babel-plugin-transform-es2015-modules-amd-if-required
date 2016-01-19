@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-es2015-modules-amd-if-required",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Transforms ES2015 modules to AMD define statements if they aren't already AMD modules",
   "repository": "https://github.com/kayneb/babel-plugin-transform-es2015-modules-amd-if-required",
   "license": "MIT",
