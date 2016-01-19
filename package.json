@@ -1,6 +1,6 @@
 {
   "name": "babel-plugin-transform-es2015-modules-amd-if-required",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "repository": "https://github.com/kayneb/babel-plugin-transform-es2015-modules-amd-if-required",
   "license": "MIT",
