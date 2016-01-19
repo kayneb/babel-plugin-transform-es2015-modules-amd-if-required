@@ -1,6 +1,6 @@
 # babel-plugin-transform-es2015-modules-amd-if-required
 
-Transforms ES2015 modules to AMD modules, only if they aren't already AMD modules. Also ignores any `require.config`s
+Transforms ES2015 modules to AMD modules, only if they aren't already AMD modules or require configs.
 
 ## Installation
 
