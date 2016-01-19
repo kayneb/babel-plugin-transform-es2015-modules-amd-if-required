@@ -1,1 +1,1 @@
-require("babel-helper-plugin-test-runner")(__dirname);
+require("./test-runner")(__dirname);

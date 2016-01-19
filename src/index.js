@@ -32,14 +32,17 @@ export default function ({ types: t }) {
     let args = expr.get("arguments");
     if (args.length === 3 && !args.shift().isStringLiteral()) return false;
 
-    let nextArg = args.shift();
-    if (!nextArg.isArrayExpression()) {
-      if (!nextArg.isFunctionExpression()) {
-        return false;
+    let firstArg = args.shift();
+    if (firstArg.isArrayExpression()) {
+      let secondArg = args.shift();
+      if (secondArg.isFunctionExpression()) {
+        return true;
       }
-    } else if (!nextArg.isFunctionExpression()) return false;
+    } else if (firstArg.isFunctionExpression()) {
+      return true;
+    }
 
-    return true;
+    return false;
   }
 
   function isValidRequireConfig(path) {
