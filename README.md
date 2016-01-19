@@ -33,3 +33,6 @@ require("babel-core").transform("code", {
   plugins: ["transform-es2015-modules-amd-if-required"]
 });
 ```
+
+# License
+See [LICENSE.md](./LICENSE.md)
